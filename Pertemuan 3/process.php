@@ -20,6 +20,7 @@
             $errMsgVar = $emptyErrMsg;
         } else {
             $valueVar = test_input($_POST[$name]);
+            $_SESSION[$name] = $valueVar;
             if ($regex && !preg_match($regex, $valueVar)) {
                 $errMsgVar = $regMismatchMsg;
             }

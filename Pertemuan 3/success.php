@@ -15,7 +15,7 @@
 
     <table>
         <tr>
-            <td colspan="2"><p>Selamat datang, <span><?php echo $username;?></span></p></td>
+            <td colspan="2"><p>Selamat datang, <span><?php echo $_SESSION["fusername"];?></span></p></td>
         </tr>
     </table>
 </body>

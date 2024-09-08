@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
     <title>Formulir</title>
 </head>
 
@@ -87,7 +88,7 @@
                         <br><label><span class="error"><?php echo $programStudiErr;?></span></label>
                     </td>
                 </tr>
-
+                
                 <!-- hobi -->
                 <tr>
                     <td>
@@ -123,10 +124,11 @@
                         <label for="fpassword">Password</label>
                     </td>
                     <td>
-                        <input type="password" name="fpassword" id="fpassword" size="40">
+                        <input type="password" name="fpassword" id="fpassword" size="40" onchange="validatePassword();">
+                        <br><label><span id="passwordWarning" class="error"></span></label>
                     </td>
-                 </tr>
-
+                </tr>
+                
                 <!-- submit button -->
                 <tr>
                     <td class="center-button" colspan="2">
