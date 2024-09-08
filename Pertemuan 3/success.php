@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Details</title>
+</head>
+<body>
+    <?php 
+        require 'process.php';
+
+        echo '<script> alert("Form submitted successfully"); </script>';
+    ?>
+
+    <table>
+        <tr>
+            <td colspan="2"><p>Selamat datang, <span><?php echo $username;?></span></p></td>
+        </tr>
+    </table>
+</body>
+</html>
